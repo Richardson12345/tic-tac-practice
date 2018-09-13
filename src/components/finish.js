@@ -22,9 +22,18 @@ class Finish extends Component {
                     {"\n"}
                 </Text>
                 <Button
-                title="play again"
+                title="play tic-tac-toe"
                 onPress={() => {
                     this.props.navigation.navigate('Board')
+                }}
+                />
+                <Text>
+                    {"\n"}
+                </Text>
+                <Button
+                title="play snakes-and-ladders"
+                onPress={() => {
+                    this.props.navigation.navigate('Ladder')
                 }}
                 />
             </View>

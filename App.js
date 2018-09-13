@@ -12,6 +12,7 @@ import {Platform, StyleSheet, Text, View} from 'react-native'
 import Home from './src/components/home'
 import Board from './src/components/board'
 import Finish from './src/components/finish'
+import Ladder from './src/components/ladder'
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -23,7 +24,8 @@ const instructions = Platform.select({
 const RootStack = createStackNavigator({
   Home,
   Board,
-  Finish
+  Finish,
+  Ladder
 }, {
   initialRouteName: 'Home',
   navigationOptions: {

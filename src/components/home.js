@@ -29,12 +29,22 @@ class Home extends Component {
                     </View>
                 </View> */}
                 <Button
-                title="play"
+                title="play tic-tac-toe"
                 containerViewStyle={{
                     width: '80%'
                 }}
                 onPress={() => {
                     this.props.navigation.navigate('Board')
+                }}
+                />
+                <Text>{"\n"}</Text>
+                <Button
+                title="play snakes-and-ladders"
+                containerViewStyle={{
+                    width: '80%'
+                }}
+                onPress={() => {
+                    this.props.navigation.navigate('Ladder')
                 }}
                 />
             </View>
